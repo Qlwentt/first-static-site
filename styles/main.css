@@ -1,0 +1,80 @@
+/* main.css */
+
+/* entire doc in Helvetica font */
+html{
+	font-family: Helvetica;
+}
+
+/* Nav bar formatting*/
+nav{
+	height: 51px;
+	background-color: #404040;
+}
+
+header ul {
+	height: 100%;
+	width: 	50%;
+	background-color: #404040;
+	float: right;
+}
+header ul li a{
+	text-decoration: none;
+	color: white;
+	 font-variant: small-caps;
+}
+header ul li{
+	position: relative;
+	top: 4%;
+	display: inline-block;
+	/*border-top: 4px solid #ecd91a;*/
+	background-color: #404040;	
+	margin: -2px;
+	padding: 4.0%;
+	font-size: 1.5em;
+}
+
+header ul li:hover{
+	border-top: 4px solid rgba(236, 217, 18, 0.43);
+}
+
+#this-page{
+	border-top: 4px solid #ecd91a;
+}
+
+/*Hi There and welcome paragraph*/
+section {
+	clear:both;
+	float:left;
+	background-color: blue;
+	width: 50%; 
+	padding: 40px;
+}
+/*image*/
+main img{
+	float:right;
+	width:200px; 
+    height: auto;
+    margin: 40px;
+
+}
+
+/*footer*/
+footer{
+	clear: both;
+	height: 51px;
+	background-color: #404040;
+}
+
+footer h4{
+	float: left;
+}
+
+footer ul{
+	float: right;
+}
+
+footer ul li{
+	position: relative;
+	display: inline-block;
+}
+
