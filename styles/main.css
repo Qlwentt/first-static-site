@@ -7,15 +7,17 @@ html{
 
 /* Nav bar formatting*/
 nav{
-	height: 55px;
+	height: 45px;
 	background-color: #404040;
 }
 
 header ul {
 	height: 100%;
 	width: 	50%;
-	background-color: #404040;
+	/*background-color: #404040;*/
 	float: right;
+	white-space : nowrap; /* this does the trick */
+    overflow : hidden;
 }
 header ul li a{
 	text-decoration: none;
@@ -27,9 +29,9 @@ header ul li{
 	top: 4%;
 	display: inline-block;
 	/*border-top: 4px solid #ecd91a;*/
-	background-color: #404040;	
+	/*background-color: #404040;*/
 	margin: -2px;
-	padding: 4.0%;
+	padding: 10px;
 	font-size: 1.5em;
 }
 
@@ -42,30 +44,60 @@ header ul li:hover{
 }
 
 /*Hi There and welcome paragraph*/
-section {
+section:first-of-type {
 	clear:both;
 	float:left;
 	background-color: #fbdb16;
-	width: 50%; 
-	padding: 40px;
+	height: 100%;
+	
 	/*color:white;*/
 }
+section{
+	width: 39%; 
+	padding: 5%;
+	/*white-space : nowrap; *//* this does the trick */
+    overflow : hidden;
+	height: 80%;
+}
+
+section p{
+	height: 100%;
+}
 /* main image*/
+section:nth-of-type(2){
+	/*background-color: green;*/
+	float: right;
+	white-space : nowrap; /* this does the trick */
+    overflow : hidden;
+}
+
+main{
+	/*background-color: blue;*/
+	z-index: 40;
+    height: 500px;
+    width: 100%;
+}
+
 main img{
-	float:right;
+	/*float:right;*/
 	width:200px; 
     height: auto;
     margin: 40px;
-    position: fixed;
-    left: 62%;
+    /*position: fixed;*/
+    /*left: 62%;*/
+   /* z-index: -1;*/
 
 }
 
 /*footer*/
 footer{
 	clear: both;
-	height: 51px;
-	background-color: #404040;
+    height: 45px;
+    width: 100%;
+    background-color: #404040;
+    position: fixed;
+    left: 0%;
+    top: 92%;
 }
 
 footer h4{
@@ -73,12 +105,14 @@ footer h4{
 	position: relative;
 	top: 40%;
 	left: -5%;
+	color: white;
 	/*margin: 5%;*/
 }
 
 footer ul{
 	float: left;
-	width: 25%;
+	/*width: 25%;*/
+	padding-left: 10px;
 }
 
 footer ul li{
