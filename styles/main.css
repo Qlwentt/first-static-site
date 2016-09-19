@@ -78,7 +78,7 @@ main{
     width: 100%;
 }
 
-main img{
+#main-image img{
 	/*float:right;*/
 	width:200px; 
     height: auto;

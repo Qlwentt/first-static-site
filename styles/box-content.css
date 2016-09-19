@@ -9,6 +9,11 @@ section{
 	display: inline-block;
 }
 
+section img{
+	width: 80%;
+	height:auto;
+}
+
 h1{
 	font-size: 3em
 }
