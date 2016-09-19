@@ -44,7 +44,7 @@ header ul li:hover{
 }
 
 /*Hi There and welcome paragraph*/
-section:first-of-type {
+#greeting {
 	clear:both;
 	float:left;
 	background-color: #fbdb16;
@@ -64,7 +64,7 @@ section p{
 	height: 100%;
 }
 /* main image*/
-section:nth-of-type(2){
+#main-image{
 	/*background-color: green;*/
 	float: right;
 	white-space : nowrap; /* this does the trick */
@@ -92,7 +92,7 @@ main img{
 /*footer*/
 footer{
 	clear: both;
-    height: 45px;
+    height: 45%;
     width: 100%;
     background-color: #404040;
     position: fixed;
