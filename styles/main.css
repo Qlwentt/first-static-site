@@ -3,11 +3,15 @@
 /* entire doc in Helvetica font */
 html{
 	font-family: Helvetica;
+	font-size: 1.35em;
+	overflow: scroll;
+	/*height: 100vmax;*/
 }
 
 /* Nav bar formatting*/
 nav{
-	height: 45px;
+	/*height: 45px;*/
+	overflow: hidden;
 	background-color: #404040;
 }
 
@@ -23,24 +27,21 @@ header ul li a{
 	text-decoration: none;
 	color: white;
 	font-variant: small-caps;
+	text-transform: lowercase;
 }
 header ul li{
-	position: relative;
-	top: 4%;
 	display: inline-block;
-	/*border-top: 4px solid #ecd91a;*/
-	/*background-color: #404040;*/
-	margin: -2px;
-	padding: 10px;
+	padding: 2% 2.5% 2.5% 2.5%;
+	margin: -0.3%;
 	font-size: 1.5em;
 }
 
 header ul li:hover{
-	border-top: 4px solid rgba(236, 217, 18, 0.43);
+	border-top: 6px solid rgba(236, 217, 18, 0.43);
 }
 
 #this-page{
-	border-top: 4px solid #f3d102;
+	border-top: 6px solid #f3d102;
 }
 
 /*Hi There and welcome paragraph*/
@@ -48,20 +49,56 @@ header ul li:hover{
 	clear:both;
 	float:left;
 	background-color: #fbdb16;
-	height: 100%;
+	height: 100vmax;
 	
 	/*color:white;*/
 }
+
+.front-page{
+	
+	width: 100%;
+	padding:0;
+	/*opacity: 0.5;*/
+	/*background: rgba(255,0,0,0.4);*/
+}
+
+.front-page h1{
+	font-size: 2em;
+	padding-bottom: 1%;
+	/*background-color: #fbdb16;*/
+	background: rgba(251, 229, 33, 0.79);
+	position: relative;
+}
+
+.front-page h2{
+	font-size: 1.3em;
+	/*background-color: #fbdb16;*/
+	background: rgba(255, 255, 255, 0.8);;
+	/*border: 6px solid white;*/
+	position: relative;
+}
+
+.front-page img{
+	width:100vmax; 
+    height: auto;
+    /*opacity: 0.8;*/
+    margin-bottom: -1vmax;
+    margin-top: -4.4vmax;
+}
+
+
 section{
 	width: 39%; 
 	padding: 5%;
-	/*white-space : nowrap; *//* this does the trick */
-    overflow : hidden;
-	height: 80%;
+	/*margin-bottom: -1%;*/
+	/*overflow : hidden;*/
 }
+	/*white-space : nowrap; *//* this does the trick */
+ 
+	/*height: 80%;*/
 
 section p{
-	height: 100%;
+	/*height: 100%;*/
 }
 /* main image*/
 #main-image{
@@ -73,8 +110,7 @@ section p{
 
 main{
 	/*background-color: blue;*/
-	z-index: 40;
-    height: 500px;
+    min-height: 100%;
     width: 100%;
 }
 
@@ -92,21 +128,21 @@ main{
 /*footer*/
 footer{
 	clear: both;
-    height: 45%;
+    overflow: hidden;
     width: 100%;
+    height:10%;
     background-color: #404040;
-    position: fixed;
-    left: 0%;
-    top: 92%;
+    position: relative;
+    /*top: 94vmax;*/
 }
 
 footer h4{
 	float: right;
 	position: relative;
-	top: 40%;
-	left: -5%;
+	/*top: 40%;*/
+	/*left: -5%;*/
 	color: white;
-	/*margin: 5%;*/
+	margin: 15px 3% 0% 0%;
 }
 
 footer ul{

@@ -6,8 +6,8 @@ section{
 	padding: 5%;
 	margin-top: 0.5%;
 	/*white-space : nowrap; *//* this does the trick */
-	height: 25%;
-	
+	height: 10vmax;
+	overflow: hidden;
 }
 
 section ul{
